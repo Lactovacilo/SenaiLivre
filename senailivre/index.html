@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Senai Livre</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+</head>
+<body id="inicial">
+    <div class="fechaMenu"></div>
+    <header>
+        <!-- https://codepen.io/tacosontitan/pen/zYxXzKo -->
+        <!-- https://codepen.io/noahraskin/pen/abENVwL -->
+        <!-- https://codepen.io/argyleink/pen/OJMEpGp -->
+        <!-- https://cssgradient.io/ -->
+        <!-- https://cssgradient.io/gradient-backgrounds/ -->
+        <!-- https://fireship.io/lessons/wavy-backgrounds/ -->
+        <!-- https://alvarotrigo.com/blog/animated-backgrounds-css/ -->
+        <!-- https://www.joshwcomeau.com/gradient-generator/ -->
+        <div id="div-header">
+            <div id="div-header-search">
+                <div>
+                    <figure><img src="img/senai.png" alt="SenaiLivre"></figure>
+                </div>
+    
+                <div id="barra_pesquisa">
+                    <input type="text" name="pesquisa" id="barra" required minlength="1" maxlength="400" placeholder="Buscar produtos, marcas e muito mais">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div id="div-nav">
+                <nav>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i> Vender</a>
+    
+                    <a href="#"><i class="fa-solid fa-phone"></i> Contato</a>
+                    
+                    <button id="header-botao-usuario"><i class="fa-solid fa-user"></i></button>
+                </nav>
+            </div>
+        </div>
+        <div id="header-barralateral">
+            <div id="conta">
+                <div>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <p>Nome da conta</p>
+            </div>
+            <a href="usuario/login.php" id="header-login">
+                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                <p>Login</p>
+            </a>
+            <a href="usuario/cadastrar.php" id="header-cadastrar">
+                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                <p>Cadastrar</p>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <div id="div-diagonais">
+            <div id="main-tags-veiculos"></div>
+            <div id="main-tags-tecnologia"></div>
+            <div id="main-tags-casa"></div>
+            <div id="main-tags-eletro"></div>
+            <div id="main-tags-esportes"></div>
+            <div id="main-tags-ferramentas"></div>
+            <div id="main-tags-construcao"></div>
+        </div>
+
+        <div class="div-ofertas-do-dia">
+            <div>
+                <img src="img/ofertasdodia/fritadeira.png" alt="Fritadeira de ar">
+                <p class="ofertas-oferta">Oferta do dia</p>
+                <p class="ofertas-preco">R$670.00</p>
+                <p class="ofertas-descricao">10x R$67.00 sem juros</p>
+                <p class="ofertas-frete">Frete <span>grátis</span></p>
+                <p class="ofertas-descricao">Fritadeira de ar</p>
+            </div>
+            <div>
+                <img src="img/ofertasdodia/camera.png" alt="Camera fotografica">
+                <p class="ofertas-oferta">Oferta do dia</p>
+                <p class="ofertas-preco">R$300.00</p>
+                <p class="ofertas-descricao">10x R$30.00 sem juros</p>
+                <p class="ofertas-frete">Frete <span>grátis</span></p>
+                <p class="ofertas-descricao">Câmera fotográfica</p>
+            </div>
+            <div>
+                <img src="img/ofertasdodia/laptop.png" alt="">
+                <p class="ofertas-oferta">Oferta do dia</p>
+                <p class="ofertas-preco">R$1900.00</p>
+                <p class="ofertas-descricao">10x R$190.00 sem juros</p>
+                <p class="ofertas-frete">Frete <span>grátis</span></p>
+                <p class="ofertas-descricao">Laptop</p>
+            </div>
+            <div>
+                <img src="img/ofertasdodia/cadeiraGamer.png" alt="Cadeira gamer">
+                <p class="ofertas-oferta">Oferta do dia</p>
+                <p class="ofertas-preco">R$1600.00</p>
+                <p class="ofertas-descricao">10x R$160.00 sem juros</p>
+                <p class="ofertas-frete">Frete <span>grátis</span></p>
+                <p class="ofertas-descricao">Cadeira gamer</p>
+            </div>
+            <div>
+                <img src="img/ofertasdodia/meias.png" alt="Meias">
+                <p class="ofertas-oferta">Oferta do dia</p>
+                <p class="ofertas-preco">R$70.00</p>
+                <p class="ofertas-descricao">10x R$7.00 sem juros</p>
+                <p class="ofertas-frete">Frete <span>grátis</span></p>
+                <p class="ofertas-descricao">Meias</p>
+            </div>
+        </div>
+
+        <div id="div-mais-ofertas">
+            <p id="mais-opcoes">Mais opções do dia</p>
+            <div id="div-mais-ofertas-descontos">
+                <div>
+                    <img src="img/descontos/descTVs.png" alt="">
+                    <p>TV's</p>
+                </div>
+                <div>
+                    <img src="img/descontos/descModas.png" alt="">
+                    <p>Roupas</p>
+                </div>
+                <div>
+                    <img src="img/descontos/descDomenticos.png" alt="">
+                    <p>Casa e decorações</p>
+                </div>
+                <div>
+                    <img src="img/descontos/descCelulares.png" alt="">
+                    <p>Smartphones</p>
+                </div>
+                <div>
+                    <img src="img/descontos/descBeleza.png" alt="">
+                    <p>Beleza</p>
+                </div>
+                <div>
+                    <img src="img/descontos/descFerramentas.png" alt="">
+                    <p>Ferramentas</p>
+                </div>
+                <div>
+                    <img src="img/descontos/descEletronico.png" alt="">
+                    <p>Games</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="div-melhores-promocoes">
+            <p id="p-melhores-promocoes">As melhores promoções</p>
+            <div class="div-ofertas-do-dia">
+                <div>
+                    <img src="img/melhorespromocoes/ofFerramentas.png" alt="Caixa de ferramentas">
+                    <p class="ofertas-oferta">Oferta do dia</p>
+                    <p class="ofertas-preco">R$670.00</p>
+                    <p class="ofertas-descricao">10x R$67.00 sem juros</p>
+                    <p class="ofertas-frete">Frete <span>grátis</span></p>
+                    <p class="ofertas-descricao">Caixa de ferramentas</p>
+                </div>
+                <div>
+                    <img src="img/melhorespromocoes/ofTvs.png" alt="">
+                    <p class="ofertas-oferta">Oferta do dia</p>
+                    <p class="ofertas-preco">R$300.00</p>
+                    <p class="ofertas-descricao">10x R$30.00 sem juros</p>
+                    <p class="ofertas-frete">Frete <span>grátis</span></p>
+                    <p class="ofertas-descricao">Televisores</p>
+                </div>
+                <div>
+                    <img src="img/melhorespromocoes/ofCelulares.png" alt="">
+                    <p class="ofertas-oferta">Oferta do dia</p>
+                    <p class="ofertas-preco">R$1900.00</p>
+                    <p class="ofertas-descricao">10x R$190.00 sem juros</p>
+                    <p class="ofertas-frete">Frete <span>grátis</span></p>
+                    <p class="ofertas-descricao">Celulares</p>
+                </div>
+                <div>
+                    <img src="img/melhorespromocoes/ofTvs2.png" alt="Cadeira gamer">
+                    <p class="ofertas-oferta">Oferta do dia</p>
+                    <p class="ofertas-preco">R$1600.00</p>
+                    <p class="ofertas-descricao">10x R$160.00 sem juros</p>
+                    <p class="ofertas-frete">Frete <span>grátis</span></p>
+                    <p class="ofertas-descricao">Televisores 4K</p>
+                </div>
+                <div>
+                    <img src="img/melhorespromocoes/ofCalcas.png" alt="Meias">
+                    <p class="ofertas-oferta">Oferta do dia</p>
+                    <p class="ofertas-preco">R$70.00</p>
+                    <p class="ofertas-descricao">10x R$7.00 sem juros</p>
+                    <p class="ofertas-frete">Frete <span>grátis</span></p>
+                    <p class="ofertas-descricao">Calças</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <!-- https://codepen.io/uiswarup/pen/GRJLOMp -->
+        <div id="footer-div">
+            <div>
+                <p>Copyright © 1999-2022 Ebazar.com.br LTDA.</p>
+                <p>CNPJ n.º 03.007.331/0001-41 / Av. das Nações Unidas, nº 3.003, Bonfim, Osasco/SP - CEP 06233-903 - empresa do grupo Mercado Livre.</p>
+            </div>
+            <div id="footer-div-a">
+                <nav>
+                    <a href="#">Trabalhe conosco</a>
+                    <a href="#">Acessibilidade</a>
+                    <a href="#">Contato</a>
+                    <a href="#">Como cuidamos da sua privacidade</a>
+                    <a href="#">Termos e condições</a>
+                    <a href="#">Informações sobre seguros</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/d1efe6d39d.js" crossorigin="anonymous"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>

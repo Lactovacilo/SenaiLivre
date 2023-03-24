@@ -1,0 +1,660 @@
+/* www.joshwcomeau.com */
+
+*{
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --CorPrincipal: #FFF159;
+    --ofertas: #3682FD;
+    --valor: #2CA469;
+    --valorParcela: #4DB68A;
+    --textos: #383838;
+
+    /* Dashboard */
+    --Background: #1E1E2D;
+    --TextDashboard: #9D9DA6;
+    --BackgroundTransparente: rgba(0, 0, 0, 0.13);
+    --AzulAtivo: #009EF7;
+    --BGAtivo: #F4F6FA;
+
+    --CardAtivo: ;
+    --CardDefault: ;
+}
+
+.title{
+    font-weight: bold;
+}
+
+.bgbranco{
+    background-color: #FFFFFF;
+}
+
+#inicial a{
+    text-decoration: none;
+    color: var(--textos);
+}
+
+#inicial button{
+    background-color: transparent;
+}
+
+#inicial header{
+    background-color: var(--CorPrincipal);
+    height: 130px;
+}
+
+#inicial header #div-header div div figure img,
+#inicial header #div-header div div figure,
+#inicial header #div-header div div{
+    width: 130px;
+}
+
+#inicial header div div #barra_pesquisa{
+    background-color: white;
+    height: 40px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    /* border: 1px solid #242020; */
+    padding: 0px 15px;
+}
+
+#inicial header div div #barra_pesquisa input{
+    width: 90%;
+    background-color: transparent;
+    outline: none;
+}
+
+#inicial header div div #barra_pesquisa i{
+    font-size: 20px;
+}
+
+#inicial header div #div-nav a{
+    font-size: 25px;
+}
+
+#inicial header div nav #header-botao-usuario,
+#inicial header #header-barralateral #conta div{
+    background-color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+#inicial header div nav #header-botao-usuario i,
+#inicial header #header-barralateral #conta i,
+#inicial header div #div-nav nav button,
+#inicial header #header-barralateral #header-login i,
+#inicial header #header-barralateral #header-cadastrar i{
+    font-size: 30px;
+}
+
+#inicial header #div-header{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 5fr 3fr 1fr;
+}
+
+#inicial header #div-header #div-header-search,
+#inicial header div #div-nav nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+#inicial header #header-barralateral{
+    /* display: none; */
+
+    background-image: linear-gradient(to bottom, #FFF159, #e1d44e, #FFF159, #FFF159, #e1d44e, #FFF159, #FFF159, #e1d44e);
+    position: fixed;
+    right: -225px;
+    top: 0px;
+    height: 100vh;
+    width: 225px;
+    transition: all 0.5s cubic-bezier(.36,.01,.24,.98);
+    z-index: 9;
+}
+
+#inicial .fechaMenu {
+    position: fixed;
+    top: 0; right: 0;
+    width: 100%; height: 100%;
+    z-index: 8;
+    display: none;
+}
+
+#inicial header #header-barralateral #conta{
+    display: flex;
+    align-items: center;
+}
+
+#inicial header #header-barralateral #conta div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+#inicial header #header-barralateral #header-login i,
+#inicial header #header-barralateral #header-cadastrar i{
+    padding: 10px;
+}
+
+#inicial header #header-barralateral #header-login,
+#inicial header #header-barralateral #header-cadastrar{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    margin: 5px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+/* ------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+#inicial main #div-diagonais{
+    display: flex;
+    overflow: hidden;
+}
+
+#inicial main #div-diagonais div{
+    transition: all 0.3s;
+    flex:1;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: skew(-20deg);
+    background-position: center;
+}
+
+#inicial main #div-diagonais div:hover{
+    flex:2.3;
+    cursor: pointer;
+}
+
+#inicial main #div-diagonais #main-tags-veiculos{
+    background-image:url(img/tags/veiculo.jpg)
+}
+
+#inicial main #div-diagonais #main-tags-tecnologia{
+    background-image:url(img/tags/tecnologia.webp)
+}
+
+#inicial main #div-diagonais #main-tags-casa,
+#inicial main #div-diagonais{
+    background-image:url(img/tags/casaMoveis.webp)
+}
+
+#inicial main #div-diagonais #main-tags-eletro{
+    background-image:url(img/tags/eletroDomenticos.jpg)
+}  
+
+#inicial main #div-diagonais #main-tags-esportes{
+    background-image:url(img/tags/esportes.webp)
+}
+
+#inicial main #div-diagonais #main-tags-ferramentas{
+    background-image:url(img/tags/ferramentas.jpg)
+}
+
+#inicial main #div-diagonais #main-tags-construcao{
+    background-image:url(img/tags/construcao.jpg)
+}
+
+
+
+
+#inicial .div-ofertas-do-dia{
+    display: flex;
+    padding: 40px 20px;
+    gap: 20px;
+}
+
+#inicial .div-ofertas-do-dia div{
+    flex: 1;
+    border: 5px outset #5095ff;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: white;
+}
+
+#inicial .div-ofertas-do-dia div:hover{
+    border: 5px inset #5095ff;
+}
+
+#inicial .div-ofertas-do-dia div .ofertas-oferta{
+    padding: 5px;
+    border-radius: 10px;
+    background-color: var(--ofertas);
+    color: white;
+    font-weight: bold;
+    width: fit-content;
+    text-align: center;
+    border: 3px outset #5095ff;
+}
+
+#inicial .div-ofertas-do-dia div .ofertas-preco{
+    font-size: x-large;
+}
+
+#inicial .div-ofertas-do-dia div .ofertas-descricao{
+    color: rgb(189, 154, 154);
+}
+
+#inicial .div-ofertas-do-dia div .ofertas-frete{
+    color: rgb(134, 111, 111);
+    font-weight: bolder;
+}
+
+#inicial .div-ofertas-do-dia div .ofertas-frete span{
+    color: rgb(48, 182, 0);
+}
+
+#inicial #div-mais-ofertas{
+
+text-align: center;
+}
+
+#inicial #div-mais-ofertas #mais-opcoes{
+    margin: 20px;
+}
+
+#inicial #div-mais-ofertas p:not(#mais-opcoes){
+    margin: 10px;
+}
+
+#inicial #div-mais-ofertas #div-mais-ofertas-descontos{
+    display: flex;
+}
+
+#inicial #div-mais-ofertas #div-mais-ofertas-descontos div{
+    flex: 1;
+}
+
+
+
+#inicial #div-melhores-promocoes{
+    /* background-image: linear-gradient(
+  180deg,
+  hsl(0deg 0% 100%) 0%,
+  hsl(51deg 85% 90%) 8%,
+  hsl(53deg 79% 80%) 21%,
+  hsl(55deg 75% 69%) 37%,
+  hsl(30deg 24% 57%) 56%,
+  hsl(290deg 23% 36%) 77%,
+  hsl(240deg 100% 20%) 100%
+); */
+
+margin-top: 70px;
+}
+
+#inicial #div-melhores-promocoes #p-melhores-promocoes{
+    text-align: center;
+}
+
+#inicial #div-melhores-promocoes .div-ofertas-do-dia div img{
+    max-width: 180px;
+}
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------------- */
+footer #footer-div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+    /* background-image: linear-gradient(to bottom, hsl(240deg 100% 20%) 1%, hsl(240, 100%, 33%)); */
+    background-image: url(img/rodape.png);
+    background-repeat: no-repeat;
+    background-position: -90px;
+    background-color: #FFF159;
+}
+
+footer #footer-div-a nav a{
+    display: inline-block;
+    width: calc(49% - 40px);
+}
+
+footer #footer-div p,
+footer #footer-div-a nav a{
+    padding: 10px;
+    font-size: 15px;
+    /* color: whitesmoke; */
+}
+/* --------------------------------------------------------------------------------- */
+
+/* ---------------------------------- Cadastrar ------------------------------------- */
+
+#cadastrar form,
+#login form{
+    margin: 5vh auto;
+    max-width: 320px;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 0px 4px rgba(15, 15, 255, 0.185);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+  
+#cadastrar form p,
+#login form p{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #1a202c;
+}
+  
+#cadastrar form  label,
+#login form label{
+    color: rgb(0, 0, 0);
+    margin-bottom: 4px;
+}
+  
+#cadastrar form input,
+#login form input{
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 1rem;
+    color: #414141;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+    height: 25px;
+}
+
+#cadastrar form input:focus,
+#login form input:focus{
+    background-color: #fff;
+    box-shadow: 0 0 0 2px #cbd5e0;
+}
+  
+#cadastrar form input:valid{
+    border: 3px solid rgb(23, 198, 23);
+}
+  
+#cadastrar form input:invalid,
+#login form input{
+    border: 1px solid rgba(14, 14, 14, 0.205);
+}
+  
+#cadastrar form button,
+#login form button{
+    background-color: #1a202c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    margin-top: 10px;
+}
+
+
+
+
+/* -----------------------------    DASHBOARD    -------------------------------------- */
+
+.lit-up{
+    color: #FFFFFF;
+}
+
+.toolbar-ativa{
+    border-radius: 6px;
+    background-color: var(--BGAtivo);
+    color: var(--AzulAtivo);
+}
+
+#dashboard{
+    height: 100dvh;
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+}
+
+#dashboard-sidebar{
+    background-color: var(--Background);
+}
+
+#dashboard-sidebar-logo{
+    padding: 15px 10px;
+    border-bottom: 3px dashed #2e2929;
+}
+
+#dashboard-sidebar-lista{
+    display: flex;
+    flex-direction: column;
+}
+
+#dashboard-sidebar-lista button{
+    margin: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+    background: none;
+    color: var(--TextDashboard);
+    font-size: 18px
+}
+
+
+
+#dashboard-principal-footer{
+    padding: 10px;
+}
+
+
+
+
+/* -------------------------------- Dashboard main -------------------------------- */
+
+#dashboard-principal-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 60px 0px 10px;
+}
+
+#dashboard-principal-header-menu{
+    display: flex;
+}
+
+#dashboard-principal-header-menu span{
+    padding: 15px;
+}
+
+#dashboard-principal-header-menu span p{
+    padding: 10px;
+    cursor: pointer;
+}
+
+#dashboard-principal-header-icones{
+    cursor: pointer;
+}
+
+
+
+#dashboard-principal-main{
+    height: calc(100dvh - 138px);
+    background-color: var(--BackgroundTransparente);
+    padding: 15px 60px;
+    overflow-y: scroll;
+}
+
+#dashboard-principal-main-toolbar-ecommerce-ul{
+    display: flex;
+    color: var(--TextDashboard);
+}
+
+#dashboard-principal-main-toolbar-ecommerce-span{
+    height: 2px;
+    width: 5px;
+    background-color: var(--TextDashboard);
+    margin: auto 8px;
+}
+
+
+
+#dashboard-principal-main-content{
+    display: grid;
+    grid-template-rows: 3fr 3fr 6fr;
+    gap: 40px;
+    height: inherit;
+}
+
+#dashboard-principal-main-content-upper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.class-dashboard-cards-grande{
+    font-size: x-large;
+    display: flex;
+}
+
+.class-dashboard-cards-normal{
+    font-size: medium;
+}
+
+.class-dashboard-cards-pequeno{
+    font-size: smaller;
+}
+
+#dashboard-principal-main-content-upper .fa-solid{
+    font-size: 56px;
+}
+
+#dashboard-principal-main-content-upper .class-dashboard-cards{
+    background-color: #FFFFFF;
+    transition: all 0.6s;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+#dashboard-principal-main-content-upper .class-dashboard-cards:hover{
+    background: linear-gradient(0deg, rgb(145,221,142) 5%, rgba(255, 255, 255, 0) 90%);
+    box-shadow: 7px 7px 9px 3px rgba(0,0,0,0.1);
+}
+
+
+
+
+
+
+
+
+#dashboard-principal-main-content-middle{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+#dashboard-principal-main-content-middle .bgbranco,
+#dashboard-principal-main-content-lower .bgbranco,
+#dashboard-principal-main-content-middle-ecommerce-a{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#dashboard-principal-main-content-middle-carrinhos-ativos-p{
+    padding: 15px;
+}
+
+#dashboard-principal-main-content-middle-tags{
+    display: flex;
+}
+
+#dashboard-principal-main-content-middle-tags div{
+    border: 3px dashed var(--TextDashboard);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#dashboard-principal-main-content-middle-lista table{
+    width: -webkit-fill-available;
+}
+
+#dashboard-principal-main-content-middle-lista table tr{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+#dashboard-principal-main-content-middle-ecommerce{
+    text-align: center;
+    font-size: larger;
+}
+
+#dashboard-principal-main-content-middle-ecommerce div{
+    padding: 20px;
+}
+
+#dashboard-principal-main-content-middle-ecommerce-a{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#dashboard-principal-main-content-middle-ecommerce-a a{
+    border-radius: 10px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+#dashboard-principal-main-content-middle-ecommerce-a-novidades{
+    background-color: var(--AzulAtivo);
+    color: #FFFFFF;
+}
+
+#dashboard-principal-main-content-middle-ecommerce-a-produtos{
+    background-color: var(--BackgroundTransparente);
+}
+
+
+
+
+
+
+
+
+
+#dashboard-principal-main-content-lower{
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    gap: 20px;
+}
